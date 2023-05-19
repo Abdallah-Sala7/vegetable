@@ -1,0 +1,99 @@
+@media (min-width: 576px) {
+  .products-section .product-contint {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-section .product-card{
+    max-width: auto;
+  }
+
+  .feature-contint .feature-item {
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    padding: 0;
+    max-width: 720px;
+  }
+
+  .products-section .product-contint {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .client-section .client-info .client-title,
+  .hero-section .hero-contint .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .client-section .client-info .client-desc,
+  .hero-section .hero-contint .hero-desc {
+    font-size: 1.25rem;
+  }
+
+  .club-section .club-info .club-desc {
+    width: 70%;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .products-section .custom-title .menu{
+    display: flex;
+  }
+
+  .custom-container {
+    max-width: 95%;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .header{
+    display: block;
+  }
+
+  .hero-section {
+    padding-top: 250px;
+  }
+
+  .client-section .client-contint,
+  .hero-section .hero-contint {
+    gap: 4rem;
+  }
+
+  .client-section .client-contint .client-info,
+  .client-section .client-contint .client-video,
+  .hero-section .hero-contint .hero-video,
+  .hero-section .hero-contint .hero-info {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .products-section .product-contint {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer {
+    padding-bottom: 0;
+  }
+
+  .tool-bar {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  nav .nav-contint .nav-search .delivery-contint {
+    display: flex;
+  }
+
+  .products-section .product-contint {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
