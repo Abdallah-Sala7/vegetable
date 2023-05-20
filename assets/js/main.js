@@ -1,35 +1,3 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 30,
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1400: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-
-
 // add active class to cart panel
 const cartPanel = document.querySelector(".cart-panel");
 const overLayForAll = document.querySelector("[data-target='for-all']");
@@ -81,9 +49,6 @@ menuBtn.forEach((el) => {
   });
 });
 
-
-
-
 // overlay for reset all
 overLayForAll.addEventListener("click", () => {
   cartPanel.classList.remove("active");
@@ -92,3 +57,18 @@ overLayForAll.addEventListener("click", () => {
   menuPanel.classList.remove("active");
   stopScroll();
 });
+
+// add to cart animation
+
+const addToCartBtn = document.querySelectorAll(".add-btn");
+
+addToCartBtn.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    el.classList.add("active");
+    setTimeout(() => {
+      el.classList.remove("active");
+    }, 3000);
+    e.preventDefault();
+  });
+}
+);

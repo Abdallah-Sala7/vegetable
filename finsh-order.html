@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#009536" />
+  <meta name="description" content="vegetable" />
+  <meta name="keywords" content="vegetable" />
+  <meta name="author" content="vegetable" />
+
+  <title>vegetable</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/finsh-order.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <div class="nav-wrapper">
+    <nav>
+      <div class="custom-container">
+        <div class="nav-contint">
+          <div class="nav-search">
+            <div class="search-form">
+              <form action="">
+                <input type="text" placeholder="ما الذي تبحث عنه؟" />
+
+                <button class="search-btn">
+                  <img src="assets/images/icons/search_light.png" alt="search" />
+                </button>
+              </form>
+            </div>
+
+            <div class="delivery-contint">
+              <img src="assets/images/icons/delivery-truck.svg" alt="delivery-truck" />
+
+              <span>تسليم البضائع إلى الوطن</span>
+            </div>
+          </div>
+
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                <img src="assets/images/icons/status.svg" alt="Status" />
+
+                <span>من نحن</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <img src="assets/images/icons/gift.svg" alt="gift" />
+
+                <span>اسم القسيمة</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link action-btn account-btn account-sign-btn" data-bs-toggle="modal"
+                data-bs-target="#signModal">
+                <img src="assets/images/icons/user.svg" alt="" />
+
+                <span>اسم المستخدم </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link" data-target='cart-panel'>
+                <img src="assets/images/icons/shopping-cart.svg" alt="Shopping-cart" />
+
+                <span>السلة والمبيعات</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- start Header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header-contint">
+          <a href="#" data-target='menu-panel' class="menu-icon">
+            <img src="assets/images/icons/menu.svg" alt="Menu" />
+          </a>
+
+          <div class="header-list">
+            <a href="products.html" class="header-item">
+              <img src="assets/images/icons/healthy-food.png" alt="Logo" />
+
+              <span>الخضروات</span>
+            </a>
+
+            <a href="products.html" class="header-item">
+              <img src="assets/images/icons/fruits.png" alt="Logo" />
+
+              <span>الفواكه</span>
+            </a>
+
+            <div class="dropdown">
+              <a href="products.html" class="header-item dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+
+                <img src="assets/images/icons/lettuce.png" alt="Logo" />
+
+                <span>الخضر</span>
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">القسم الفرعي القسم الفرعي </a></li>
+                <li><a class="dropdown-item" href="#">القسم الفرعي القسم الفرعي </a></li>
+                <li><a class="dropdown-item" href="#">القسم الفرعي القسم الفرعي </a></li>
+              </ul>
+            </div>
+
+            <a href="products.html" class="header-item">
+              <img src="assets/images/icons/peanut.png" alt="Logo" />
+
+              <span>المكسرات</span>
+            </a>
+
+            <a href="products.html" class="header-item">
+              <img src="assets/images/icons/harvest.png" alt="Logo" />
+
+              <span>المخزن</span>
+            </a>
+
+            <a href="products.html" class="header-item">
+              <img src="assets/images/icons/spray.png" alt="Logo" />
+
+              <span>المنظفات</span>
+            </a>
+          </div>
+
+          <div class="avatar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- **** mobile-menu ***** -->
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-container tabs-content-area">
+        <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
+          <li class="nav-item w-50" role="presentation">
+            <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
+              المنتجات
+            </button>
+          </li>
+
+          <li class="nav-item w-50" role="presentation">
+            <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+              القسم
+            </button>
+          </li>
+        </ul>
+
+        <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
+          <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
+            id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+            <ul class="mobile-menu">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="index.html">الرئيسية</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">منتجاتنا</a>
+                </a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#">اتصل بنا</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#">من نحن </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
+            role="tabpane2" aria-labelledby="pills-home-tab">
+            <ul class="mobile-menu">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/harvest.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                  aria-expanded="false" aria-controls="collapseExample">
+                  <img src="assets/images/icons/healthy-food.png" alt="harvest" />
+                  عنوان القسم عنوان القسم
+
+                  <span class="collapse-arrow">
+                    <img src="assets/images/icons/down-arrow.png" alt="arrow">
+                  </span>
+                </a>
+
+                <div class="collapse menu-collapse" id="collapseExample">
+                  <a class="collapse-link mobile-menu-link" href="products.html">
+                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                    عنوان القسم عنوان القسم
+                  </a>
+                  <a class="collapse-link mobile-menu-link" href="products.html">
+                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                    عنوان القسم عنوان القسم
+                  </a>
+                </div>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/peanut.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/spray.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/fruits.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="mobile-menu-close panel-responsive-btn panel-responsive-close" data-target="menu-panel">
+        <img src="assets/images/icons/close.png" alt="close icon" />
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <section class="section-style finish-order-section pb-0">
+      <div class="container">
+        <div class="finish-order-area">
+          <div class="row">
+            <div class="col-xxl-4 col-lg-6">
+              <div class="duplicated-box cart-box">
+                <div class="box-head"><span>السلة</span></div>
+                <div class="box-body">
+                  <div class="cart-items-area">
+                    <div class="cart-item">
+                      <div class="row gx-3">
+                        <div class="col-xxl-5 col-xl-4 col-lg-5  col-sm-4">
+                          <div class="product-img mx-0">
+                            <a class="d-block" href="product-default.html">
+                              <img class="img-fluid" src="assets/images/card_img.png" alt="productName">
+                            </a>
+
+                          </div>
+
+
+                        </div>
+                        <div class="col-xxl-7 col-xl-8 col-lg-7  col-sm-8">
+
+                          <div class="product-info">
+
+                            <a href="product-default.html" class="product-name">اسم المنتج</a>
+                            <p class="product-desc">
+
+                              تـــــفاصيل المنتج
+                              خصم 50% على جميع الساعات الرقمية بمناسبة عيد الأضحى هذا النص هو مثال لنص يمكن أن يستبدل في
+                              نفس المساحة
+
+                            </p>
+                            <div class="product-price">
+
+                              <p class="price new">$49.50 </p>
+                              <p class="price old"><del>$55.50</del></p>
+                            </div>
+                            <div class="product-actions">
+
+                              <div class="counter-wrap">
+
+                                <div class="count-wrap form-group">
+
+                                  <button type="button" class="count-btn count-add" data-type="plus">
+
+                                    <span class="count-icon add-icon">
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px"
+                                        viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;"
+                                        xml:space="preserve">
+                                        <g>
+                                          <path
+                                            d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z">
+                                          </path>
+                                        </g>
+                                      </svg>
+
+                                    </span>
+
+                                  </button>
+
+                                  <input type="text" class="count-num form-control input-focus" value="1" step="1"
+                                    inputmode="tel" min="1" max="10" autocomplete="off">
+
+                                  <button type="button" class="count-btn count-sub" data-type="minus">
+
+                                    <span class="count-icon sub-icon">
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42"
+                                        style="enable-background:new 0 0 42 42;" xml:space="preserve">
+                                        <path
+                                          d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z">
+                                        </path>
+                                      </svg>
+
+                                    </span>
+
+                                  </button>
+
+                                </div>
+                                <div class="msg-error d-none"> نص هنا مثال : اقل/اقصي عدد 5 قطع </div>
+                              </div>
+
+                              <div class="actions-btns">
+
+                                <button type="button" class="action-btn edit-btn">
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                      d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z" />
+                                  </svg>
+
+                                </button>
+
+                              </div>
+
+
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                      <button type="button" class="action-bt delete-item ">
+
+                        <img src="assets/images/icons/trash.png" alt="delete">
+
+                      </button>
+
+                    </div>
+                    <div class="cart-item">
+
+                      <div class="row gx-3">
+
+                        <div class="col-xxl-5 col-xl-4 col-lg-5  col-sm-4">
+
+                          <div class="product-img mx-0">
+
+                            <a class="d-block" href="product-default.html">
+                              <img class="img-fluid" src="assets/images/product_img.png" alt="productName">
+                            </a>
+
+                          </div>
+
+
+                        </div>
+                        <div class="col-xxl-7 col-xl-8 col-lg-7  col-sm-8">
+
+                          <div class="product-info">
+
+                            <a href="product-default.html" class="product-name">اسم المنتج</a>
+                            <p class="product-desc">
+
+                              تـــــفاصيل المنتج
+                              خصم 50% على جميع الساعات الرقمية بمناسبة عيد الأضحى هذا النص هو مثال لنص يمكن أن يستبدل في
+                              نفس المساحة
+
+                            </p>
+                            <div class="product-price">
+
+                              <p class="price new">$49.50 </p>
+                              <p class="price old"><del>$55.50</del></p>
+                            </div>
+                            <div class="product-actions">
+
+
+                              <div class="counter-wrap">
+
+                                <div class="count-wrap form-group">
+
+                                  <button type="button" class="count-btn count-add" data-type="plus">
+
+                                    <span class="count-icon add-icon">
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px"
+                                        viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;"
+                                        xml:space="preserve">
+                                        <g>
+                                          <path
+                                            d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z">
+                                          </path>
+                                        </g>
+                                      </svg>
+
+                                    </span>
+
+                                  </button>
+
+                                  <input type="text" name="quant" class="count-num form-control input-focus" value="1"
+                                    step="1" inputmode="tel" min="1" max="10" autocomplete="off">
+
+                                  <button type="button" class="count-btn count-sub" data-type="minus">
+
+                                    <span class="count-icon sub-icon">
+
+                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42"
+                                        style="enable-background:new 0 0 42 42;" xml:space="preserve">
+                                        <path
+                                          d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z">
+                                        </path>
+                                      </svg>
+
+                                    </span>
+
+                                  </button>
+
+                                </div>
+                                <div class="msg-error d-none "> نص هنا مثال : اقل/اقصي عدد 5 قطع </div>
+                              </div>
+
+                              <div class="actions-btns">
+
+                                <button type="button" class="action-btn edit-btn">
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                      d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z" />
+                                  </svg>
+
+                                </button>
+
+                              </div>
+
+
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                      <button type="button" class="action-bt delete-item ">
+
+                        <img src="assets/images/icons/trash.png" alt="trash">
+
+                      </button>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xxl-4 col-lg-6">
+              <div class="duplicated-box data-box">
+                <div class="box-head"><span>أدخل البيانات</span></div>
+                <div class="box-body">
+                  <div class="order-data-area inputs-area">
+
+                    <form class="order-data-form" action="#">
+
+                      <div class="form-group">
+
+                        <input type="text" class="form-control input-focus" placeholder="الاسم الاول">
+
+                      </div>
+                      <div class="form-group">
+
+                        <input type="text" class="form-control input-focus" placeholder="أسم العائلة">
+
+                      </div>
+                      <div class="form-group">
+
+                        <div class="row gx-3">
+
+                          <div class="col">
+
+                            <input type="text" class="form-control input-focus" placeholder="اليوم">
+
+                          </div>
+                          <div class="col">
+
+                            <input type="text" class="form-control input-focus" placeholder="الشهر">
+
+                          </div>
+                          <div class="col">
+
+                            <input type="text" class="form-control input-focus" placeholder="السنة">
+
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="form-group">
+
+                        <input type="email" class="form-control input-focus" placeholder="البريد الالكتروني">
+
+                      </div>
+                      <div class="form-group">
+
+                        <input type="tel" class="form-control input-focus" placeholder="الهاتف">
+
+                      </div>
+                      <div class="form-group">
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label " for="flexCheckDefault">
+                            شروط المستخدم
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group">
+
+                        <input type="tel" class="form-control input-focus" placeholder="رقم البطاقة">
+
+                      </div>
+                      <div class="form-group">
+
+                        <input type="tel" class="form-control input-focus" placeholder="تاريخ البطاقة">
+
+                      </div>
+                      <div class="form-group">
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                          <label class="form-check-label " for="flexCheckDefault2">
+                            شروط المستخدم
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="form-group">
+
+                        <textarea class="form-control input-focus" placeholder="النص المستخدم"></textarea>
+
+                      </div>
+
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-xxl-4 col-lg-12">
+
+
+              <div class="duplicated-box purchase-box">
+
+                <div class="box-head"><span>تفاصيل الشراء</span></div>
+                <div class="box-body">
+
+                  <div class="purchase-area inputs-area">
+
+                    <div class="purchase-info">
+
+                      <div class="info-item">
+
+                        <span class="info-title">اسم المنتج</span>
+                        <span class="info-val">325$</span>
+                      </div>
+                      <div class="info-item">
+
+                        <span class="info-title">السعر بعد الضريبة</span>
+                        <span class="info-val">350$</span>
+                      </div>
+
+                    </div>
+
+                    <form class="purchase-form" action="#">
+
+                      <div class="group-flex">
+
+                        <div class="form-group">
+
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              بطاقة إئتمان
+                            </label>
+                          </div>
+
+                        </div>
+                        <div class="img-group">
+
+                          <img class="img-fluid" src="assets/images/icons/pypal.svg" alt="payment">
+                          <img class="img-fluid" src="assets/images/icons/visa.svg" alt="payment">
+
+                          <img class="img-fluid" src="assets/images/icons/pypal.svg" alt="payment">
+                          <img class="img-fluid" src="assets/images/icons/visa.svg" alt="payment">
+
+
+                        </div>
+
+                      </div>
+
+                      <div class="form-group">
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            بطاقة إئتمان
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="form-group">
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                          <label class="form-check-label" for="flexRadioDefault3">
+                            بطاقة إئتمان
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="form-group">
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                          <label class="form-check-label" for="flexRadioDefault4">
+                            بطاقة إئتمان
+                          </label>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group">
+
+                        <label class="form-label">عدد الاقساط</label>
+
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+
+                      </div>
+                      <div class="submit-btn-wrap">
+
+                        <button type="button" class="submit-btn">تأكيد</button>
+                      </div>
+
+                    </form>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-area">
+        <div class="row justify-content-center">
+          <div class="col-md-3 order-1" data-aos="fade-up" data-aos-once="true" data-aos-delay="0">
+            <div class="footer-menu">
+              <h4 class="menu-title">القائمة</h4>
+              <ul class="menu-list">
+                <li class="list-item">
+                  <a class="item-link" href="index.html">الصفحة الرئيسية </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">
+                    العناوين الرئيسية
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">رأي العملاء</a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">تواصل معانا
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 order-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="0">
+            <div class="footer-menu">
+              <h4 class="menu-title">العنوان هنا</h4>
+              <ul class="menu-list">
+                <li class="list-item">
+                  <a class="item-link" href="#">نص بديل</a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#"> نص بديل </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">نص بديل</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 order-3" data-aos="fade-up" data-aos-once="true" data-aos-delay="0">
+            <div class="footer-menu">
+              <h4 class="menu-title">اتصل بنا</h4>
+              <ul class="menu-list">
+                <li class="list-item">
+                  <a class="item-link" href="#"> Office072-2506929 </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#"> Fax09-7990932 </a>
+                </li>
+                <li class="list-item">
+                  <a class="item-link" href="#">Emailinfo@rimak</a>
+                </li>
+                <li class="list-item">
+                  <div class="social-list">
+                    <a class="social-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="social-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="social-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 order-0 order-lg-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="0">
+            <div class="footer-menu">
+              <div class="footer-logo">
+                <a class="d-block" href="index.html">
+                  <img class="img-fluid" src="assets/images/logo.svg" alt="academy" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy-rights">
+      <p>
+        جميع الحقوق محفوظة -
+
+        <span>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- sign-modal -->
+  <div class="modal fade sign-modal custom-modal" id="signModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button type="button" class="btn__close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="assets/images/icons/close.png" alt="close" />
+        </button>
+        <div class="modal-body">
+          <div class="sign-area tabs-content-area">
+            <div class="login-btns nav nav-pills" id="pills-tab" role="tablist">
+              <button type="button" class="sign-in-btn tab-btn active nav-link" data-target="sign-in-tab"
+                id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab"
+                aria-controls="pills-login" aria-selected="false">
+                تسجيل الدخول
+              </button>
+
+              <button type="button" class="sign-in-up tab-btn nav-link" data-target="sign-in-tab"
+                id="pills-new-acount-tab" data-bs-toggle="pill" data-bs-target="#pills-new-acount" type="button"
+                role="tab" aria-controls="pills-new-acount" aria-selected="false">
+                إنشاء حساب
+              </button>
+            </div>
+
+            <div class="social-login">
+              <a class="social-item" href="#">
+                <img class="img-fluid" src="assets/images/icons/facebook.png" />
+              </a>
+              <a class="social-item" href="#">
+                <img class="img-fluid" src="assets/images/icons/twitter.png" />
+              </a>
+              <a class="social-item" href="#">
+                <img class="img-fluid" src="assets/images/icons/google.png" />
+              </a>
+            </div>
+
+            <div class="sign-tabs-area tab-content" id="pills-tabContent">
+              <div class="sign-tab sign-in-tab tab-content tab-pane fade show active" id="pills-login" role="tabpanel"
+                aria-labelledby="pills-login-tab">
+                <form class="sign-in-form">
+                  <div class="form-group">
+                    <label class="form-label">البريد الإلكترونى</label>
+                    <input type="email" class="form-control input-focus" placeholder=" ادخل البريد الإلكترونى" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">كلمة المرور</label>
+                    <div class="password-field">
+                      <input type="password" class="form-control password-input input-focus"
+                        placeholder="ادخل كلمة المرور " />
+                      <div class="eye-icon"></div>
+                    </div>
+                    <a href="#" class="note toggle-modal-btn" data-bs-toggle="modal"
+                      data-bs-target="#forgetPasswordmodal">نسيت كلمة المرور؟</a>
+                  </div>
+                  <div class="submit">
+                    <button type="submit" class="submit-btn">
+                      تسجيل الدخول
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="sign-tab sign-up-tab tab-content tab-pane fade" id="pills-new-acount" role="tabpane2"
+                aria-labelledby="pills-new-acount-tab">
+                <form class="sign-in-form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">الأسم</label>
+                        <input type="text" class="form-control input-focus" placeholder=" ادخل اسم المسخدم" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">رقم الجوال</label>
+                        <input type="tel" class="form-control input-focus" placeholder=" ادخل رقم الجوال" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">البريد الإلكترونى</label>
+                        <input type="email" class="form-control input-focus" placeholder=" ادخل البريد الإلكترونى" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">تاريخ الميلاد</label>
+                        <input type="text" class="form-control input-focus datepicker"
+                          placeholder=" ادخل تاريخ ميلادك" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">كلمة المرور</label>
+                        <div class="password-field">
+                          <input type="password" class="form-control password-input input-focus"
+                            placeholder="ادخل كلمة المرور " />
+                          <div class="eye-icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-label">تأكيد كلمة المرور</label>
+                        <div class="password-field">
+                          <input type="password" class="form-control password-input input-focus"
+                            placeholder="تأكيد كلمة المرور " />
+                          <div class="eye-icon"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="submit">
+                    <button type="submit" class="submit-btn">تسجيل</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start search-popup  -->
+  <div class="search-popup panel-responsive-item">
+    <div class="container">
+      <div class="close-search-popup panel-responsive-btn panel-responsive-close" data-target="search-popup">
+        <img src="assets/images/icons/close.png" alt="close" />
+      </div>
+
+      <div class="form-group">
+        <input type="search" class="form-control input-focus" placeholder="ما الذى تبحث عنه؟ " />
+        <button type="submit" class="search-icon">
+          <img src="assets/images/icons/search_light.png" alt="search" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- End search-popup  -->
+
+  <!-- Start toolbar  -->
+  <div class="tool-bar">
+    <div class="tool">
+      <a class="tool-link" href="index.html">
+        <div class="tool-icon">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
+            <g>
+              <g>
+                <path
+                  d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
+                                        c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
+                                        c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z" />
+              </g>
+            </g>
+            <g>
+              <g>
+                <path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52
+                                        s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
+                                        c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
+                                        c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
+                                        c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
+                                        C455.549,238.499,449.593,232.543,442.246,232.543z" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <span>الرئيسية</span>
+      </a>
+    </div>
+
+    <div class="tool">
+      <a class="tool-link" href="products.html">
+        <div class="tool-icon">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 60.123 60.123" style="enable-background: new 0 0 60.123 60.123"
+            xml:space="preserve">
+            <g>
+              <path
+                d="M57.124,51.893H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,51.893,57.124,51.893z" />
+              <path d="M57.124,33.062H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3
+                                    C60.124,31.719,58.781,33.062,57.124,33.062z" />
+              <path
+                d="M57.124,14.231H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,14.231,57.124,14.231z" />
+              <circle cx="4.029" cy="11.463" r="4.029" />
+              <circle cx="4.029" cy="30.062" r="4.029" />
+              <circle cx="4.029" cy="48.661" r="4.029" />
+            </g>
+          </svg>
+        </div>
+
+        <span> المنتجات </span>
+      </a>
+    </div>
+
+    <div class="tool cart-tool">
+      <a class="tool-link panel-responsive-btn panel-responsive-open" data-target="cart-panel" href="#">
+        <div class="tool-icon">
+          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 450.391 450.391" style="enable-background: new 0 0 450.391 450.391"
+            xml:space="preserve">
+            <g>
+              <g>
+                <g>
+                  <path d="M143.673,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02
+                                    c25.969,0,47.02-21.052,47.02-47.02C190.694,371.374,169.642,350.322,143.673,350.322z M143.673,423.465
+                                    c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122c14.427,0,26.122,11.695,26.122,26.122
+                                    C169.796,411.77,158.1,423.465,143.673,423.465z" />
+                  <path
+                    d="M342.204,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02s47.02-21.052,47.02-47.02
+                                    C389.224,371.374,368.173,350.322,342.204,350.322z M342.204,423.465c-14.427,0-26.122-11.695-26.122-26.122
+                                    c0-14.427,11.695-26.122,26.122-26.122s26.122,11.695,26.122,26.122C368.327,411.77,356.631,423.465,342.204,423.465z" />
+                  <path
+                    d="M448.261,76.037c-2.176-2.377-5.153-3.865-8.359-4.18L99.788,67.155L90.384,38.42
+                                    C83.759,19.211,65.771,6.243,45.453,6.028H10.449C4.678,6.028,0,10.706,0,16.477s4.678,10.449,10.449,10.449h35.004
+                                    c11.361,0.251,21.365,7.546,25.078,18.286l66.351,200.098l-5.224,12.016c-5.827,15.026-4.077,31.938,4.702,45.453
+                                    c8.695,13.274,23.323,21.466,39.184,21.943h203.233c5.771,0,10.449-4.678,10.449-10.449c0-5.771-4.678-10.449-10.449-10.449
+                                    H175.543c-8.957-0.224-17.202-4.936-21.943-12.539c-4.688-7.51-5.651-16.762-2.612-25.078l4.18-9.404l219.951-22.988
+                                    c24.16-2.661,44.034-20.233,49.633-43.886l25.078-105.012C450.96,81.893,450.36,78.492,448.261,76.037z M404.376,185.228
+                                    c-3.392,15.226-16.319,26.457-31.869,27.69l-217.339,22.465L106.58,88.053l320.261,4.702L404.376,185.228z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <span>السلة</span>
+      </a>
+    </div>
+
+    <div class="tool">
+      <a class="tool-link" href="#" data-bs-toggle="modal" data-bs-target="#signModal">
+        <div class="tool-icon">
+          <svg viewBox="-42 0 512 512.001" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m210.351562 246.632812c33.882813 0 63.21875-12.152343 87.195313-36.128906 23.96875-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.128906 87.195312 23.980469 23.96875 53.316406 36.125 87.191406 36.125zm-65.972656-189.292968c18.394532-18.394532 39.972656-27.335938 65.972656-27.335938 25.996094 0 47.578126 8.941406 65.976563 27.335938 18.394531 18.398437 27.339844 39.980468 27.339844 65.972656 0 26-8.945313 47.578125-27.339844 65.976562-18.398437 18.398438-39.980469 27.339844-65.976563 27.339844-25.992187 0-47.570312-8.945312-65.972656-27.339844-18.398437-18.394531-27.34375-39.976562-27.34375-65.976562 0-25.992188 8.945313-47.574219 27.34375-65.972656zm0 0" />
+            <path
+              d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.3125-10.339844-7.808594-20.550781-13.375-30.335938-5.769532-10.15625-12.550782-19-20.160157-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.042969 5.339844-10.96875 0-22.085937-1.796876-33.042968-5.339844-11.210938-3.621094-20.300782-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.753906-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.609375 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.0625 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.777344-1.023438 19.953125-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.4375 23.730469 65.066406 23.730469h246.53125c26.621094 0 48.511719-7.984375 65.0625-23.730469 16.757813-15.945312 25.253906-37.589843 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm-44.90625 72.828125c-10.933594 10.40625-25.449218 15.464844-44.378906 15.464844h-246.527344c-18.933594 0-33.449218-5.058594-44.378906-15.460938-10.722656-10.207031-15.933594-24.140625-15.933594-42.585937 0-9.59375.316406-19.066407.949219-28.160157.617187-8.921874 1.878906-18.722656 3.75-29.136718 1.847656-10.285156 4.199219-19.9375 6.996094-28.675782 2.683593-8.378906 6.34375-16.675781 10.882812-24.667968 4.332031-7.617188 9.316407-14.152344 14.816407-19.417969 5.144531-4.925781 11.628906-8.957031 19.269531-11.980469 7.066406-2.796875 15.007812-4.328125 23.628906-4.558594 1.050781.558594 2.921875 1.625 5.953125 3.601563 6.167969 4.019531 13.277344 8.605469 21.136719 13.625 8.859375 5.648437 20.273437 10.75 33.910156 15.152344 13.941406 4.507812 28.160156 6.796875 42.273437 6.796875 14.113282 0 28.335938-2.289063 42.269532-6.792969 13.648437-4.410156 25.058594-9.507813 33.929687-15.164063 8.042969-5.140624 14.953125-9.59375 21.121094-13.617187 3.03125-1.972656 4.902344-3.042969 5.953125-3.601563 8.625.230469 16.566406 1.761719 23.636719 4.558594 7.636719 3.023438 14.121093 7.058594 19.265625 11.980469 5.5 5.261719 10.484375 11.796875 14.816406 19.421875 4.542969 7.988281 8.207031 16.289062 10.886719 24.660156 2.800781 8.75 5.15625 18.398438 7 28.675782 1.867187 10.433593 3.132812 20.238281 3.75 29.144531v.007812c.636719 9.058594.957031 18.527344.960937 28.148438-.003906 18.449219-5.214844 32.378906-15.9375 42.582031zm0 0" />
+          </svg>
+        </div>
+
+        <span>حسابي</span>
+      </a>
+    </div>
+
+    <div class="tool">
+      <a class="tool-link search-popup-btn panel-responsive-btn panel-responsive-open" data-target="search-popup"
+        href="#">
+        <div class="tool-icon">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M508.875,493.792L353.089,338.005c32.358-35.927,52.245-83.296,52.245-135.339C405.333,90.917,314.417,0,202.667,0
+                                        S0,90.917,0,202.667s90.917,202.667,202.667,202.667c52.043,0,99.411-19.887,135.339-52.245l155.786,155.786
+                                        c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125C513.042,504.708,513.042,497.958,508.875,493.792z
+                                         M202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333S384,102.677,384,202.667
+                                        S302.646,384,202.667,384z" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <span>بحث</span>
+      </a>
+    </div>
+  </div>
+  <!-- End toolbar  -->
+
+  <!-- Start cart-panel  -->
+  <div class="cart-panel panel-responsive-item noScroll">
+    <div class="panel-container h-100">
+      <div class="panel-head">
+        <h2 class="head-title">سلة المشتريات</h2>
+        <span class="panel-close panel-responsive-btn panel-responsive-close" data-target="cart-panel">
+          <img class="img-fluid" src="assets/images/icons/close.png" alt="close_icon" loading="lazy" />
+        </span>
+      </div>
+
+      <div class="panel-body">
+        <div class="cart-items">
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/buy_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/buy_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-actions">
+          <div class="total-cart">
+            <span class="total-title">المجموع</span>
+            <span class="total-val">5222ش</span>
+          </div>
+
+          <div class="actions-btns">
+            <a class="action-btn cart-link" href="finish-order.html">عرض السلة</a>
+            <a class="action-btn checkout-link" href="finish-order.html">الي الدفع</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End cart-panel  -->
+
+  <div class="overlay side-overlay panel-responsive-btn panel-responsive-close" role="banner" data-target="for-all">
+  </div>
+
+  <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
