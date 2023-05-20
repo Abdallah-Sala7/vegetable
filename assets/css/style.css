@@ -1761,8 +1761,7 @@ footer .copy-rights p {
   position: fixed !important;
   top: 0;
   bottom: 0;
-  height: 100vh;
-  overflow: auto;
+  overflow: auto !important;
   z-index: 99999;
   right: -120%;
   width: 350px;
@@ -1775,6 +1774,10 @@ footer .copy-rights p {
 
 .cart-panel.active {
   right: 0;
+}
+
+.cart-panel .panel-body{
+  padding: 1rem;
 }
 
 .cart-panel .panel-head {
