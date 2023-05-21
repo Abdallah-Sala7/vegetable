@@ -1,19 +1,7 @@
 /*------------- #finish-order-section --------------*/
 
-.finish-order-section {
-  padding-top: 120px !important;
-}
-
-@media (min-width: 992px) {
-  .finish-order-section {
-    padding-top: 260px !important;
-  }  
-}
-
 @media(min-width:1200px) {
-
   .finish-order-section .container-n {
-
     max-width: none;
   }
 }
@@ -40,9 +28,9 @@
 }
 
 .finish-order-area .duplicated-box .box-body {
-
   padding: 1.5rem .75rem;
-  border: 1px solid rgba(154, 154, 154, 0.87);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px var(--border-r-2) var(--border-r-2);
   border-top: 0;
 }
 
@@ -59,8 +47,13 @@
   padding: 1.5rem 1rem;
 }
 
-.finish-order-area .cart-items-area .cart-item {
+.finish-order-area .cart-items-area{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
 
+.finish-order-area .cart-items-area .cart-item {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -74,6 +67,10 @@
 .finish-order-area .cart-items-area .cart-item:last-child {
 
   margin-bottom: calc((35px / 2));
+}
+
+.finish-order-area .cart-items-area .product-card .product-img img{
+  max-height: 200px;
 }
 
 .finish-order-area .cart-items-area .cart-item .product-img {
@@ -91,6 +88,9 @@
   border-radius: 6px;
 }
 
+.finish-order-area .product-card .nav-pills .nav-link{
+  padding: 0.5rem 1.25rem;
+}
 
 
 
@@ -435,4 +435,52 @@
   font-weight: bold;
   border-radius: 0;
   border-width: 1px 0 1px 0;
+}
+
+/* cart action btn */
+
+.cart-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 1.5rem;
+  margin: 0 auto;
+  border-radius: 2px;
+  background-color: var(--green);
+}
+
+.cart-action-btn .btn-action {
+  width: 25px;
+  height: 25px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.cart-action-btn .btn-action:hover {
+  background-color: var(--light-green);
+}
+
+.cart-action-btn .btn-action:hover img {
+  filter: var(--green-filter);
+}
+
+.cart-action-btn .btn-action img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: invert(0.5);
+}
+
+.cart-items-area .card-btns{
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px){
+  .cart-action-btn {
+    width: fit-content;
+  }
 }

@@ -42,18 +42,18 @@
 
           <ul class="nav-bar">
             <li class="nav-item">
-              <a href="about.html" class="nav-link">
-                <img src="assets/images/icons/status.svg" alt="Status" />
+              <a href="index.html" class="nav-link">
+                <img src="assets/images/icons/home.png" alt="home" />
 
-                <span>من نحن</span>
+                <span>الرئيسية</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <img src="assets/images/icons/gift.svg" alt="gift" />
+              <a href="about.html" class="nav-link">
+                <img src="assets/images/icons/status.svg" alt="Status" />
 
-                <span>اسم القسيمة</span>
+                <span>من نحن</span>
               </a>
             </li>
 
@@ -79,7 +79,6 @@
     </nav>
 
     <!-- start Header -->
-
     <header class="header">
       <div class="container">
         <div class="header-contint">
@@ -142,26 +141,22 @@
 
     <!-- **** mobile-menu ***** -->
     <div class="mobile-menu-wrapper">
-      <div class="mobile-menu-container tabs-content-area">
-        <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
-          <li class="nav-item w-50" role="presentation">
-            <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
-              data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
-              المنتجات
-            </button>
-          </li>
+      <div class="mobile-menu-container tabs-content-area mobile-menu">
+        <div class="menu-search">
+          <form action="">
+            <div class="menu-search-form">
+              <input type="search" placeholder="ما الذي تبحث عنه؟" />
 
-          <li class="nav-item w-50" role="presentation">
-            <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
-              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-              القسم
-            </button>
-          </li>
-        </ul>
+              <button class="search-btn">
+                بحث
+              </button>
+            </div>
+          </form>
+        </div>
 
-        <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
-          <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
-            id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+        <div class="mobile-menu-tabs-content tab-content">
+
+          <div class="mobile-menu-tab-pane tab-content mobile-main-menu">
             <ul class="mobile-menu">
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link" href="index.html">الرئيسية</a>
@@ -178,71 +173,6 @@
 
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link" href="#">من نحن </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
-            role="tabpane2" aria-labelledby="pills-home-tab">
-            <ul class="mobile-menu">
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/harvest.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  <img src="assets/images/icons/healthy-food.png" alt="harvest" />
-                  عنوان القسم عنوان القسم
-
-                  <span class="collapse-arrow">
-                    <img src="assets/images/icons/down-arrow.png" alt="arrow">
-                  </span>
-                </a>
-
-                <div class="collapse menu-collapse" id="collapseExample">
-                  <a class="collapse-link mobile-menu-link" href="products.html">
-                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                    عنوان القسم عنوان القسم
-                  </a>
-                  <a class="collapse-link mobile-menu-link" href="products.html">
-                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                    عنوان القسم عنوان القسم
-                  </a>
-                </div>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/peanut.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/spray.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/fruits.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
               </li>
             </ul>
           </div>
@@ -289,20 +219,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -349,20 +279,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -409,20 +339,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -469,20 +399,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -529,20 +459,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -589,20 +519,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -649,20 +579,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -709,20 +639,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -769,20 +699,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -829,20 +759,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -889,20 +819,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -949,20 +879,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1009,20 +939,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1069,20 +999,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1129,20 +1059,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1189,20 +1119,80 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
+                      data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
+                      aria-selected="true" aria-label="الحبة">
+                      الحبة
+                    </button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-kilo-tab" data-bs-toggle="pill" data-bs-target="#pills-kilo"
+                      type="button" role="tab" aria-controls="pills-kilo" aria-selected="false">
+                      الكيلو
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="btn btn-primary add-btn">
+                <span class="cart-text">
+                  أضف للسلة
+                </span>
+
+                <span class="cart-text-done">
+                  تمت الإضافة
+                </span>
+
+                <img src="assets/images/icons/shopping-cart.svg" alt="cart icon" class="cart-icon" />
+                <img src="assets/images/icons/check.png" alt="check icon" class="check-icon" />
+              </button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-img">
+              <img src="assets/images/card_img.png" alt="product" loading="lazy" />
+            </div>
+
+            <div class="card-body">
+              <h2 class="card-title">اسم المنتج جزر</h2>
+
+              <div class="card-items">
+                <p class="card-price">4.15 شيكل للكيلوغرام</p>
+
+                <p class="card-price">4.15 شيكل للكيلوغرام</p>
+              </div>
+
+              <div class="card-btns">
+                <div class="counter">
+                  <a href="#" class="count-btn plus">
+                    <img src="assets/images/icons/plus.png" alt="plus icon" />
+                  </a>
+
+                  <input type="text" value=1 class="count-value" />
+
+                  <a href="#" class="count-btn minus">
+                    <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
+                  </a>
+                </div>
+
+                <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1249,20 +1239,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1309,20 +1299,20 @@
 
               <div class="card-btns">
                 <div class="counter">
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn plus">
                     <img src="assets/images/icons/plus.png" alt="plus icon" />
                   </a>
 
-                  <input type="text" value="1" class="count-value" />
+                  <input type="text" value=1 class="count-value" />
 
-                  <a href="#" class="count-btn">
+                  <a href="#" class="count-btn minus">
                     <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
                   </a>
                 </div>
 
                 <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
+                    <button class="nav-link active" id="pills-pill-tab" aria-expanded="true" data-bs-toggle="pill"
                       data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
                       aria-selected="true" aria-label="الحبة">
                       الحبة
@@ -1352,126 +1342,22 @@
               </button>
             </div>
           </div>
+        </div>
 
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assets/images/card_img.png" alt="product" loading="lazy" />
-            </div>
-
-            <div class="card-body">
-              <h2 class="card-title">اسم المنتج جزر</h2>
-
-              <div class="card-items">
-                <p class="card-price">4.15 شيكل للكيلوغرام</p>
-
-                <p class="card-price">4.15 شيكل للكيلوغرام</p>
-              </div>
-
-              <div class="card-btns">
-                <div class="counter">
-                  <a href="#" class="count-btn">
-                    <img src="assets/images/icons/plus.png" alt="plus icon" />
-                  </a>
-
-                  <input type="text" value="1" class="count-value" />
-
-                  <a href="#" class="count-btn">
-                    <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
-                  </a>
-                </div>
-
-                <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
-                      data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
-                      aria-selected="true" aria-label="الحبة">
-                      الحبة
-                    </button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-kilo-tab" data-bs-toggle="pill" data-bs-target="#pills-kilo"
-                      type="button" role="tab" aria-controls="pills-kilo" aria-selected="false">
-                      الكيلو
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <button class="btn btn-primary add-btn">
-                <span class="cart-text">
-                  أضف للسلة
-                </span>
-
-                <span class="cart-text-done">
-                  تمت الإضافة
-                </span>
-
-                <img src="assets/images/icons/shopping-cart.svg" alt="cart icon" class="cart-icon" />
-                <img src="assets/images/icons/check.png" alt="check icon" class="check-icon" />
-              </button>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assets/images/card_img.png" alt="product" loading="lazy" />
-            </div>
-
-            <div class="card-body">
-              <h2 class="card-title">اسم المنتج جزر</h2>
-
-              <div class="card-items">
-                <p class="card-price">4.15 شيكل للكيلوغرام</p>
-
-                <p class="card-price">4.15 شيكل للكيلوغرام</p>
-              </div>
-
-              <div class="card-btns">
-                <div class="counter">
-                  <a href="#" class="count-btn">
-                    <img src="assets/images/icons/plus.png" alt="plus icon" />
-                  </a>
-
-                  <input type="text" value="1" class="count-value" />
-
-                  <a href="#" class="count-btn">
-                    <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
-                  </a>
-                </div>
-
-                <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-pill-tab" data-bs-toggle="pill"
-                      data-bs-target="#pills-pill" type="button" role="tab" aria-controls="pills-pill"
-                      aria-selected="true" aria-label="الحبة">
-                      الحبة
-                    </button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-kilo-tab" data-bs-toggle="pill" data-bs-target="#pills-kilo"
-                      type="button" role="tab" aria-controls="pills-kilo" aria-selected="false">
-                      الكيلو
-                    </button>
-                  </li>
-                </ul>
-              </div>
-
-              <button class="btn btn-primary add-btn">
-                <span class="cart-text">
-                  أضف للسلة
-                </span>
-
-                <span class="cart-text-done">
-                  تمت الإضافة
-                </span>
-
-                <img src="assets/images/icons/shopping-cart.svg" alt="cart icon" class="cart-icon" />
-                <img src="assets/images/icons/check.png" alt="check icon" class="check-icon" />
-              </button>
-            </div>
-          </div>
+        <div class="show-more-wrap d-flex justify-content-end mt-4">
+          <a class="show-more-link" href="products.html">
+            المزيد
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Capa_1" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 45 45"
+                style="enable-background: new 0 0 45 45" xml:space="preserve">
+                <g>
+                  <path
+                    d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z" />
+                </g>
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -1890,6 +1776,42 @@
           <div class="item-wrap">
             <div class="item-img">
               <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
                 <img class="img-fluid" src="assets/images/buy_img.png" alt="productName" loading="lazy" />
               </a>
             </div>
@@ -1921,6 +1843,126 @@
     </div>
   </div>
   <!-- End cart-panel  -->
+
+  <!-- **** mobile-menu ***** -->
+  <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-container tabs-content-area menu-product">
+      <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
+        <li class="nav-item w-50" role="presentation">
+          <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
+            المنتجات
+          </button>
+        </li>
+
+        <li class="nav-item w-50" role="presentation">
+          <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            القسم
+          </button>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
+        <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
+          id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="index.html">الرئيسية</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">منتجاتنا</a>
+              </a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">اتصل بنا</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">من نحن </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
+          role="tabpane2" aria-labelledby="pills-home-tab">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/harvest.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <img src="assets/images/icons/healthy-food.png" alt="harvest" />
+                عنوان القسم عنوان القسم
+
+                <span class="collapse-arrow">
+                  <img src="assets/images/icons/down-arrow.png" alt="arrow">
+                </span>
+              </a>
+
+              <div class="collapse menu-collapse" id="collapseExample">
+                <a class="collapse-link mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+                <a class="collapse-link mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </div>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/peanut.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/spray.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/fruits.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="mobile-menu-close panel-responsive-btn panel-responsive-close" data-target='product-menu-panel'>
+      <img src="assets/images/icons/close.png" alt="close icon" />
+    </a>
+  </div>
+  <!-- scroll to top btn -->
+
+  <div class="scroll-top-btn">
+    <img src="assets/images/icons/arrow_up.png" alt="up arrow" />
+  </div>
+
 
   <div class="overlay side-overlay panel-responsive-btn panel-responsive-close" role="banner" data-target="for-all">
   </div>

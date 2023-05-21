@@ -44,18 +44,18 @@
 
           <ul class="nav-bar">
             <li class="nav-item">
-              <a href="about.html" class="nav-link">
-                <img src="assets/images/icons/status.svg" alt="Status" />
+              <a href="index.html" class="nav-link">
+                <img src="assets/images/icons/home.png" alt="home" />
 
-                <span>من نحن</span>
+                <span>الرئيسية</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <img src="assets/images/icons/gift.svg" alt="gift" />
+              <a href="about.html" class="nav-link">
+                <img src="assets/images/icons/status.svg" alt="Status" />
 
-                <span>اسم القسيمة</span>
+                <span>من نحن</span>
               </a>
             </li>
 
@@ -81,7 +81,6 @@
     </nav>
 
     <!-- start Header -->
-
     <header class="header">
       <div class="container">
         <div class="header-contint">
@@ -103,7 +102,7 @@
             </a>
 
             <div class="dropdown">
-              <a href="products.html" class="header-item dropdown-toggle" type="button" id="dropdownMenuButton1"
+              <a href="#" class="header-item dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
 
                 <img src="assets/images/icons/lettuce.png" alt="Logo" />
@@ -144,26 +143,22 @@
 
     <!-- **** mobile-menu ***** -->
     <div class="mobile-menu-wrapper">
-      <div class="mobile-menu-container tabs-content-area">
-        <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
-          <li class="nav-item w-50" role="presentation">
-            <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
-              data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
-              المنتجات
-            </button>
-          </li>
+      <div class="mobile-menu-container tabs-content-area mobile-menu">
+        <div class="menu-search">
+          <form action="">
+            <div class="menu-search-form">
+              <input type="search" placeholder="ما الذي تبحث عنه؟" />
 
-          <li class="nav-item w-50" role="presentation">
-            <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
-              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-              القسم
-            </button>
-          </li>
-        </ul>
+              <button class="search-btn">
+                بحث
+              </button>
+            </div>
+          </form>
+        </div>
 
-        <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
-          <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
-            id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+        <div class="mobile-menu-tabs-content tab-content">
+
+          <div class="mobile-menu-tab-pane tab-content mobile-main-menu">
             <ul class="mobile-menu">
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link" href="index.html">الرئيسية</a>
@@ -183,71 +178,6 @@
               </li>
             </ul>
           </div>
-
-          <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
-            role="tabpane2" aria-labelledby="pills-home-tab">
-            <ul class="mobile-menu">
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/harvest.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  <img src="assets/images/icons/healthy-food.png" alt="harvest" />
-                  عنوان القسم عنوان القسم
-
-                  <span class="collapse-arrow">
-                    <img src="assets/images/icons/down-arrow.png" alt="arrow">
-                  </span>
-                </a>
-
-                <div class="collapse menu-collapse" id="collapseExample">
-                  <a class="collapse-link mobile-menu-link" href="products.html">
-                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                    عنوان القسم عنوان القسم
-                  </a>
-                  <a class="collapse-link mobile-menu-link" href="products.html">
-                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                    عنوان القسم عنوان القسم
-                  </a>
-                </div>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/peanut.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/spray.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/fruits.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -258,7 +188,7 @@
   </div>
 
   <main>
-    <section class="section-style finish-order-section pb-0">
+    <section class="finish-order-section nav-padding">
       <div class="container">
         <div class="finish-order-area">
           <div class="row">
@@ -266,223 +196,122 @@
               <div class="duplicated-box cart-box">
                 <div class="box-head"><span>السلة</span></div>
                 <div class="box-body">
-                  <div class="cart-items-area">
-                    <div class="cart-item">
-                      <div class="row gx-3">
-                        <div class="col-xxl-5 col-xl-4 col-lg-5  col-sm-4">
-                          <div class="product-img mx-0">
-                            <a class="d-block" href="product-default.html">
-                              <img class="img-fluid" src="assets/images/card_img.png" alt="productName">
+                  <div class="cart-items-area d-grid">
+                    <div class="product-card">
+                      <div class="product-img">
+                        <img src="assets/images/card_img.png" alt="product" loading="lazy" />
+                      </div>
+
+                      <div class="card-body">
+                        <h2 class="card-title">اسم المنتج جزر</h2>
+
+                        <div class="card-items">
+                          <p class="card-price">4.15 شيكل للكيلوغرام</p>
+
+                          <p class="card-price">4.15 شيكل للكيلوغرام</p>
+                        </div>
+
+                        <div class="card-btns">
+                          <div class="counter">
+                            <a href="#" class="count-btn plus">
+                              <img src="assets/images/icons/plus.png" alt="plus icon" />
                             </a>
 
+                            <input type="text" value="1" class="count-value" />
+
+                            <a href="#" class="count-btn minus">
+                              <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
+                            </a>
                           </div>
 
+                          <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-pill-tab" aria-expanded="true"
+                                data-bs-toggle="pill" data-bs-target="#pills-pill" type="button" role="tab"
+                                aria-controls="pills-pill" aria-selected="true" aria-label="الحبة">
+                                الحبة
+                              </button>
+                            </li>
 
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-kilo-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-kilo" type="button" role="tab" aria-controls="pills-kilo"
+                                aria-selected="false">
+                                الكيلو
+                              </button>
+                            </li>
+                          </ul>
                         </div>
-                        <div class="col-xxl-7 col-xl-8 col-lg-7  col-sm-8">
 
-                          <div class="product-info">
+                        <div class="cart-action-btn">
+                          <button class="btn-action">
+                            <img src="assets/images/icons/shopping-cart.svg" alt="cart icon" class="cart-icon" />
+                          </button>
 
-                            <a href="product-default.html" class="product-name">اسم المنتج</a>
-                            <p class="product-desc">
-
-                              تـــــفاصيل المنتج
-                              خصم 50% على جميع الساعات الرقمية بمناسبة عيد الأضحى هذا النص هو مثال لنص يمكن أن يستبدل في
-                              نفس المساحة
-
-                            </p>
-                            <div class="product-price">
-
-                              <p class="price new">$49.50 </p>
-                              <p class="price old"><del>$55.50</del></p>
-                            </div>
-                            <div class="product-actions">
-
-                              <div class="counter-wrap">
-
-                                <div class="count-wrap form-group">
-
-                                  <button type="button" class="count-btn count-add" data-type="plus">
-
-                                    <span class="count-icon add-icon">
-
-                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px"
-                                        viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;"
-                                        xml:space="preserve">
-                                        <g>
-                                          <path
-                                            d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z">
-                                          </path>
-                                        </g>
-                                      </svg>
-
-                                    </span>
-
-                                  </button>
-
-                                  <input type="text" class="count-num form-control input-focus" value="1" step="1"
-                                    inputmode="tel" min="1" max="10" autocomplete="off">
-
-                                  <button type="button" class="count-btn count-sub" data-type="minus">
-
-                                    <span class="count-icon sub-icon">
-
-                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42"
-                                        style="enable-background:new 0 0 42 42;" xml:space="preserve">
-                                        <path
-                                          d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z">
-                                        </path>
-                                      </svg>
-
-                                    </span>
-
-                                  </button>
-
-                                </div>
-                                <div class="msg-error d-none"> نص هنا مثال : اقل/اقصي عدد 5 قطع </div>
-                              </div>
-
-                              <div class="actions-btns">
-
-                                <button type="button" class="action-btn edit-btn">
-
-                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path
-                                      d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z" />
-                                  </svg>
-
-                                </button>
-
-                              </div>
-
-
-                            </div>
-
-                          </div>
-
-
+                          <button class="btn-action">
+                            <img src="assets/images/icons/check.png" alt="check icon" class="check-icon" />
+                          </button>
                         </div>
                       </div>
-                      <button type="button" class="action-bt delete-item ">
-
-                        <img src="assets/images/icons/trash.png" alt="delete">
-
-                      </button>
-
                     </div>
-                    <div class="cart-item">
 
-                      <div class="row gx-3">
+                    <div class="product-card">
+                      <div class="product-img">
+                        <img src="assets/images/card_img.png" alt="product" loading="lazy" />
+                      </div>
 
-                        <div class="col-xxl-5 col-xl-4 col-lg-5  col-sm-4">
+                      <div class="card-body">
+                        <h2 class="card-title">اسم المنتج جزر</h2>
 
-                          <div class="product-img mx-0">
+                        <div class="card-items">
+                          <p class="card-price">4.15 شيكل للكيلوغرام</p>
 
-                            <a class="d-block" href="product-default.html">
-                              <img class="img-fluid" src="assets/images/product_img.png" alt="productName">
+                          <p class="card-price">4.15 شيكل للكيلوغرام</p>
+                        </div>
+
+                        <div class="card-btns">
+                          <div class="counter">
+                            <a href="#" class="count-btn plus">
+                              <img src="assets/images/icons/plus.png" alt="plus icon" />
                             </a>
 
+                            <input type="text" value="1" class="count-value" />
+
+                            <a href="#" class="count-btn minus">
+                              <img src="assets/images/icons/minus-sign.png" alt="minus icon" />
+                            </a>
                           </div>
 
+                          <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-pill-tab" aria-expanded="true"
+                                data-bs-toggle="pill" data-bs-target="#pills-pill" type="button" role="tab"
+                                aria-controls="pills-pill" aria-selected="true" aria-label="الحبة">
+                                الحبة
+                              </button>
+                            </li>
 
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-kilo-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-kilo" type="button" role="tab" aria-controls="pills-kilo"
+                                aria-selected="false">
+                                الكيلو
+                              </button>
+                            </li>
+                          </ul>
                         </div>
-                        <div class="col-xxl-7 col-xl-8 col-lg-7  col-sm-8">
 
-                          <div class="product-info">
+                        <div class="cart-action-btn">
+                          <button class="btn-action">
+                            <img src="assets/images/icons/shopping-cart.svg" alt="cart icon" class="cart-icon" />
+                          </button>
 
-                            <a href="product-default.html" class="product-name">اسم المنتج</a>
-                            <p class="product-desc">
-
-                              تـــــفاصيل المنتج
-                              خصم 50% على جميع الساعات الرقمية بمناسبة عيد الأضحى هذا النص هو مثال لنص يمكن أن يستبدل في
-                              نفس المساحة
-
-                            </p>
-                            <div class="product-price">
-
-                              <p class="price new">$49.50 </p>
-                              <p class="price old"><del>$55.50</del></p>
-                            </div>
-                            <div class="product-actions">
-
-
-                              <div class="counter-wrap">
-
-                                <div class="count-wrap form-group">
-
-                                  <button type="button" class="count-btn count-add" data-type="plus">
-
-                                    <span class="count-icon add-icon">
-
-                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px"
-                                        viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;"
-                                        xml:space="preserve">
-                                        <g>
-                                          <path
-                                            d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141   c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27   c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435   c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z">
-                                          </path>
-                                        </g>
-                                      </svg>
-
-                                    </span>
-
-                                  </button>
-
-                                  <input type="text" name="quant" class="count-num form-control input-focus" value="1"
-                                    step="1" inputmode="tel" min="1" max="10" autocomplete="off">
-
-                                  <button type="button" class="count-btn count-sub" data-type="minus">
-
-                                    <span class="count-icon sub-icon">
-
-                                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42"
-                                        style="enable-background:new 0 0 42 42;" xml:space="preserve">
-                                        <path
-                                          d="M37.059,16H26H16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16h10h11.059C39.776,26,42,23.718,42,21  S39.776,16,37.059,16z">
-                                        </path>
-                                      </svg>
-
-                                    </span>
-
-                                  </button>
-
-                                </div>
-                                <div class="msg-error d-none "> نص هنا مثال : اقل/اقصي عدد 5 قطع </div>
-                              </div>
-
-                              <div class="actions-btns">
-
-                                <button type="button" class="action-btn edit-btn">
-
-                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path
-                                      d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z" />
-                                  </svg>
-
-                                </button>
-
-                              </div>
-
-
-                            </div>
-
-                          </div>
-
-
+                          <button class="btn-action">
+                            <img src="assets/images/icons/check.png" alt="check icon" class="check-icon" />
+                          </button>
                         </div>
                       </div>
-                      <button type="button" class="action-bt delete-item ">
-
-                        <img src="assets/images/icons/trash.png" alt="trash">
-
-                      </button>
-
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -1113,6 +942,42 @@
           <div class="item-wrap">
             <div class="item-img">
               <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
                 <img class="img-fluid" src="assets/images/buy_img.png" alt="productName" loading="lazy" />
               </a>
             </div>
@@ -1136,14 +1001,133 @@
           </div>
 
           <div class="actions-btns">
-            <a class="action-btn cart-link" href="finish-order.html">عرض السلة</a>
-            <a class="action-btn checkout-link" href="finish-order.html">الي الدفع</a>
+            <a class="action-btn cart-link" href="finsh-order.html">عرض السلة</a>
+            <a class="action-btn checkout-link" href="finsh-order.html">الي الدفع</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- End cart-panel  -->
+
+  <!-- **** mobile-menu ***** -->
+  <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-container tabs-content-area menu-product">
+      <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
+        <li class="nav-item w-50" role="presentation">
+          <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
+            المنتجات
+          </button>
+        </li>
+
+        <li class="nav-item w-50" role="presentation">
+          <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            القسم
+          </button>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
+        <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
+          id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="index.html">الرئيسية</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">منتجاتنا</a>
+              </a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">اتصل بنا</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">من نحن </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
+          role="tabpane2" aria-labelledby="pills-home-tab">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/harvest.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <img src="assets/images/icons/healthy-food.png" alt="harvest" />
+                عنوان القسم عنوان القسم
+
+                <span class="collapse-arrow">
+                  <img src="assets/images/icons/down-arrow.png" alt="arrow">
+                </span>
+              </a>
+
+              <div class="collapse menu-collapse" id="collapseExample">
+                <a class="collapse-link mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+                <a class="collapse-link mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </div>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/peanut.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/spray.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/fruits.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="mobile-menu-close panel-responsive-btn panel-responsive-close" data-target='product-menu-panel'>
+      <img src="assets/images/icons/close.png" alt="close icon" />
+    </a>
+  </div>
+  <!-- scroll to top btn -->
+
+  <div class="scroll-top-btn">
+    <img src="assets/images/icons/arrow_up.png" alt="up arrow" />
+  </div>
 
   <div class="overlay side-overlay panel-responsive-btn panel-responsive-close" role="banner" data-target="for-all">
   </div>

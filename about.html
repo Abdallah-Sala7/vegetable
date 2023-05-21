@@ -43,18 +43,18 @@
 
           <ul class="nav-bar">
             <li class="nav-item">
-              <a href="about.html" class="nav-link">
-                <img src="assets/images/icons/status.svg" alt="Status" />
+              <a href="index.html" class="nav-link">
+                <img src="assets/images/icons/home.png" alt="home" />
 
-                <span>من نحن</span>
+                <span>الرئيسية</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <img src="assets/images/icons/gift.svg" alt="gift" />
+              <a href="about.html" class="nav-link">
+                <img src="assets/images/icons/status.svg" alt="Status" />
 
-                <span>اسم القسيمة</span>
+                <span>من نحن</span>
               </a>
             </li>
 
@@ -80,7 +80,6 @@
     </nav>
 
     <!-- start Header -->
-
     <header class="header">
       <div class="container">
         <div class="header-contint">
@@ -143,26 +142,22 @@
 
     <!-- **** mobile-menu ***** -->
     <div class="mobile-menu-wrapper">
-      <div class="mobile-menu-container tabs-content-area">
-        <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
-          <li class="nav-item w-50" role="presentation">
-            <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
-              data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
-              المنتجات
-            </button>
-          </li>
+      <div class="mobile-menu-container tabs-content-area mobile-menu">
+        <div class="menu-search">
+          <form action="">
+            <div class="menu-search-form">
+              <input type="search" placeholder="ما الذي تبحث عنه؟" />
 
-          <li class="nav-item w-50" role="presentation">
-            <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
-              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-              القسم
-            </button>
-          </li>
-        </ul>
+              <button class="search-btn">
+                بحث
+              </button>
+            </div>
+          </form>
+        </div>
 
-        <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
-          <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
-            id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+        <div class="mobile-menu-tabs-content tab-content">
+
+          <div class="mobile-menu-tab-pane tab-content mobile-main-menu">
             <ul class="mobile-menu">
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link" href="index.html">الرئيسية</a>
@@ -182,71 +177,6 @@
               </li>
             </ul>
           </div>
-
-          <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
-            role="tabpane2" aria-labelledby="pills-home-tab">
-            <ul class="mobile-menu">
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/harvest.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  <img src="assets/images/icons/healthy-food.png" alt="harvest" />
-                  عنوان القسم عنوان القسم
-
-                  <span class="collapse-arrow">
-                    <img src="assets/images/icons/down-arrow.png" alt="arrow">
-                  </span>
-                </a>
-
-                <div class="collapse menu-collapse" id="collapseExample">
-                  <a class="collapse-link mobile-menu-link" href="products.html">
-                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                    عنوان القسم عنوان القسم
-                  </a>
-                  <a class="collapse-link mobile-menu-link" href="products.html">
-                    <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                    عنوان القسم عنوان القسم
-                  </a>
-                </div>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/peanut.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/spray.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="products.html">
-                  <img src="assets/images/icons/fruits.png" alt="harvest" />
-
-                  عنوان القسم عنوان القسم
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -257,7 +187,7 @@
   </div>
 
   <main>
-    <section class="we-are-section custom-section">
+    <section class="we-are-section logo-padding nav-padding">
       <div class="custom-container">
         <div class="custom-title">
           <h1 class="section-title">من نحن</h1>
@@ -554,18 +484,18 @@
               <g>
                 <path
                   d="M506.555,208.064L263.859,30.367c-4.68-3.426-11.038-3.426-15.716,0L5.445,208.064
-                                          c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
-                                          c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z" />
+                                        c-5.928,4.341-7.216,12.665-2.875,18.593s12.666,7.214,18.593,2.875L256,57.588l234.837,171.943c2.368,1.735,5.12,2.57,7.848,2.57
+                                        c4.096,0,8.138-1.885,10.744-5.445C513.771,220.729,512.483,212.405,506.555,208.064z" />
               </g>
             </g>
             <g>
               <g>
                 <path d="M442.246,232.543c-7.346,0-13.303,5.956-13.303,13.303v211.749H322.521V342.009c0-36.68-29.842-66.52-66.52-66.52
-                                          s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
-                                          c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
-                                          c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
-                                          c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
-                                          C455.549,238.499,449.593,232.543,442.246,232.543z" />
+                                        s-66.52,29.842-66.52,66.52v115.587H83.058V245.847c0-7.347-5.957-13.303-13.303-13.303s-13.303,5.956-13.303,13.303v225.053
+                                        c0,7.347,5.957,13.303,13.303,13.303h133.029c6.996,0,12.721-5.405,13.251-12.267c0.032-0.311,0.052-0.651,0.052-1.036v-128.89
+                                        c0-22.009,17.905-39.914,39.914-39.914s39.914,17.906,39.914,39.914v128.89c0,0.383,0.02,0.717,0.052,1.024
+                                        c0.524,6.867,6.251,12.279,13.251,12.279h133.029c7.347,0,13.303-5.956,13.303-13.303V245.847
+                                        C455.549,238.499,449.593,232.543,442.246,232.543z" />
               </g>
             </g>
           </svg>
@@ -584,7 +514,7 @@
               <path
                 d="M57.124,51.893H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,51.893,57.124,51.893z" />
               <path d="M57.124,33.062H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3
-                                      C60.124,31.719,58.781,33.062,57.124,33.062z" />
+                                    C60.124,31.719,58.781,33.062,57.124,33.062z" />
               <path
                 d="M57.124,14.231H16.92c-1.657,0-3-1.343-3-3s1.343-3,3-3h40.203c1.657,0,3,1.343,3,3S58.781,14.231,57.124,14.231z" />
               <circle cx="4.029" cy="11.463" r="4.029" />
@@ -608,21 +538,21 @@
               <g>
                 <g>
                   <path d="M143.673,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02
-                                      c25.969,0,47.02-21.052,47.02-47.02C190.694,371.374,169.642,350.322,143.673,350.322z M143.673,423.465
-                                      c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122c14.427,0,26.122,11.695,26.122,26.122
-                                      C169.796,411.77,158.1,423.465,143.673,423.465z" />
+                                    c25.969,0,47.02-21.052,47.02-47.02C190.694,371.374,169.642,350.322,143.673,350.322z M143.673,423.465
+                                    c-14.427,0-26.122-11.695-26.122-26.122c0-14.427,11.695-26.122,26.122-26.122c14.427,0,26.122,11.695,26.122,26.122
+                                    C169.796,411.77,158.1,423.465,143.673,423.465z" />
                   <path
                     d="M342.204,350.322c-25.969,0-47.02,21.052-47.02,47.02c0,25.969,21.052,47.02,47.02,47.02s47.02-21.052,47.02-47.02
-                                      C389.224,371.374,368.173,350.322,342.204,350.322z M342.204,423.465c-14.427,0-26.122-11.695-26.122-26.122
-                                      c0-14.427,11.695-26.122,26.122-26.122s26.122,11.695,26.122,26.122C368.327,411.77,356.631,423.465,342.204,423.465z" />
+                                    C389.224,371.374,368.173,350.322,342.204,350.322z M342.204,423.465c-14.427,0-26.122-11.695-26.122-26.122
+                                    c0-14.427,11.695-26.122,26.122-26.122s26.122,11.695,26.122,26.122C368.327,411.77,356.631,423.465,342.204,423.465z" />
                   <path
                     d="M448.261,76.037c-2.176-2.377-5.153-3.865-8.359-4.18L99.788,67.155L90.384,38.42
-                                      C83.759,19.211,65.771,6.243,45.453,6.028H10.449C4.678,6.028,0,10.706,0,16.477s4.678,10.449,10.449,10.449h35.004
-                                      c11.361,0.251,21.365,7.546,25.078,18.286l66.351,200.098l-5.224,12.016c-5.827,15.026-4.077,31.938,4.702,45.453
-                                      c8.695,13.274,23.323,21.466,39.184,21.943h203.233c5.771,0,10.449-4.678,10.449-10.449c0-5.771-4.678-10.449-10.449-10.449
-                                      H175.543c-8.957-0.224-17.202-4.936-21.943-12.539c-4.688-7.51-5.651-16.762-2.612-25.078l4.18-9.404l219.951-22.988
-                                      c24.16-2.661,44.034-20.233,49.633-43.886l25.078-105.012C450.96,81.893,450.36,78.492,448.261,76.037z M404.376,185.228
-                                      c-3.392,15.226-16.319,26.457-31.869,27.69l-217.339,22.465L106.58,88.053l320.261,4.702L404.376,185.228z" />
+                                    C83.759,19.211,65.771,6.243,45.453,6.028H10.449C4.678,6.028,0,10.706,0,16.477s4.678,10.449,10.449,10.449h35.004
+                                    c11.361,0.251,21.365,7.546,25.078,18.286l66.351,200.098l-5.224,12.016c-5.827,15.026-4.077,31.938,4.702,45.453
+                                    c8.695,13.274,23.323,21.466,39.184,21.943h203.233c5.771,0,10.449-4.678,10.449-10.449c0-5.771-4.678-10.449-10.449-10.449
+                                    H175.543c-8.957-0.224-17.202-4.936-21.943-12.539c-4.688-7.51-5.651-16.762-2.612-25.078l4.18-9.404l219.951-22.988
+                                    c24.16-2.661,44.034-20.233,49.633-43.886l25.078-105.012C450.96,81.893,450.36,78.492,448.261,76.037z M404.376,185.228
+                                    c-3.392,15.226-16.319,26.457-31.869,27.69l-217.339,22.465L106.58,88.053l320.261,4.702L404.376,185.228z" />
                 </g>
               </g>
             </g>
@@ -657,10 +587,10 @@
             <g>
               <g>
                 <path d="M508.875,493.792L353.089,338.005c32.358-35.927,52.245-83.296,52.245-135.339C405.333,90.917,314.417,0,202.667,0
-                                          S0,90.917,0,202.667s90.917,202.667,202.667,202.667c52.043,0,99.411-19.887,135.339-52.245l155.786,155.786
-                                          c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125C513.042,504.708,513.042,497.958,508.875,493.792z
-                                           M202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333S384,102.677,384,202.667
-                                          S302.646,384,202.667,384z" />
+                                        S0,90.917,0,202.667s90.917,202.667,202.667,202.667c52.043,0,99.411-19.887,135.339-52.245l155.786,155.786
+                                        c2.083,2.083,4.813,3.125,7.542,3.125c2.729,0,5.458-1.042,7.542-3.125C513.042,504.708,513.042,497.958,508.875,493.792z
+                                         M202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333S384,102.677,384,202.667
+                                        S302.646,384,202.667,384z" />
               </g>
             </g>
           </svg>
@@ -688,6 +618,42 @@
             <div class="item-img">
               <a class="d-block" href="#">
                 <img class="img-fluid" src="assets/images/buy_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
+              </a>
+            </div>
+
+            <div class="item-details">
+              <a class="item-name" href="#">اسم المنتج</a>
+
+              <p class="item-price">153ش</p>
+
+              <button class="del-item" type="button">
+                <img src="assets/images/icons/trash.png" alt="trash icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="item-wrap">
+            <div class="item-img">
+              <a class="d-block" href="#">
+                <img class="img-fluid" src="assets/images/card_img.png" alt="productName" loading="lazy" />
               </a>
             </div>
 
@@ -754,6 +720,126 @@
     </div>
   </div>
   <!-- End cart-panel  -->
+
+  <!-- **** mobile-menu ***** -->
+  <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-container tabs-content-area menu-product">
+      <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
+        <li class="nav-item w-50" role="presentation">
+          <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
+            المنتجات
+          </button>
+        </li>
+
+        <li class="nav-item w-50" role="presentation">
+          <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            القسم
+          </button>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
+        <div class="tab-pane fade active show mobile-menu-tab-pane nav-content tab-content mobile-main-menu"
+          id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="index.html">الرئيسية</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">منتجاتنا</a>
+              </a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">اتصل بنا</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">من نحن </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-pane fade mobile-menu-tab-pane tab-content mobile-categories-menu" id="pills-home"
+          role="tabpane2" aria-labelledby="pills-home-tab">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/harvest.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <img src="assets/images/icons/healthy-food.png" alt="harvest" />
+                عنوان القسم عنوان القسم
+
+                <span class="collapse-arrow">
+                  <img src="assets/images/icons/down-arrow.png" alt="arrow">
+                </span>
+              </a>
+
+              <div class="collapse menu-collapse" id="collapseExample">
+                <a class="collapse-link mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+                <a class="collapse-link mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </div>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/peanut.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/spray.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="products.html">
+                <img src="assets/images/icons/fruits.png" alt="harvest" />
+
+                عنوان القسم عنوان القسم
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="mobile-menu-close panel-responsive-btn panel-responsive-close" data-target='product-menu-panel'>
+      <img src="assets/images/icons/close.png" alt="close icon" />
+    </a>
+  </div>
+  <!-- scroll to top btn -->
+
+  <div class="scroll-top-btn">
+    <img src="assets/images/icons/arrow_up.png" alt="up arrow" />
+  </div>
+
 
   <div class="overlay side-overlay panel-responsive-btn panel-responsive-close" role="banner" data-target="for-all">
   </div>
