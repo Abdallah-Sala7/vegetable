@@ -14,25 +14,28 @@ scrollTopBtn.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
 
-
-
 // add active class to cart panel
 const cartPanel = document.querySelector(".cart-panel");
 const overLayForAll = document.querySelector("[data-target='for-all']");
 const cartBtn = document.querySelectorAll("[data-target='cart-panel']");
 const body = document.querySelector("body");
 
-const stopScroll = () => {
-  if (overLayForAll.classList.contains("active")) {
-    body.style.overflow = "hidden";
-  } else body.style.overflow = "auto";
-};
+// const stopScroll = () => {
+//   if (overLayForAll.classList.contains("active")) {
+//     body.style.overflow = "hidden";
+//   } else body.style.overflow = "auto";
+// };
 
 cartBtn.forEach((el) => {
   el.addEventListener("click", (e) => {
     cartPanel.classList.toggle("active");
-    overLayForAll.classList.toggle("active");
-    stopScroll();
+
+    if (menuPanel.classList.contains("active")) {
+      menuPanel.classList.remove("active");
+    } else {
+      overLayForAll.classList.toggle("active");
+    }
+
     e.preventDefault();
   });
 });
@@ -45,7 +48,6 @@ searchBtn.forEach((el) => {
   el.addEventListener("click", (e) => {
     searchPanel.classList.toggle("active");
     overLayForAll.classList.toggle("active");
-    stopScroll();
     e.preventDefault();
   });
 });
@@ -59,21 +61,21 @@ menuBtn.forEach((el) => {
   el.addEventListener("click", (e) => {
     menuPanel.classList.toggle("active");
     overLayForAll.classList.toggle("active");
-    stopScroll();
     e.preventDefault();
   });
 });
 
 // product-menu-container
 
-const menuProductBtn = document.querySelectorAll("[data-target='product-menu-panel']");
+const menuProductBtn = document.querySelectorAll(
+  "[data-target='product-menu-panel']"
+);
 const menuProductPanel = document.querySelector(".menu-product");
 
 menuProductBtn.forEach((el) => {
   el.addEventListener("click", (e) => {
     menuProductPanel.classList.toggle("active");
     overLayForAll.classList.toggle("active");
-    stopScroll();
     e.preventDefault();
   });
 });
@@ -84,9 +86,13 @@ overLayForAll.addEventListener("click", () => {
   overLayForAll.classList.remove("active");
   searchPanel.classList.remove("active");
   menuPanel.classList.remove("active");
-  menuProductPanel.classList.remove("active");
-  stopScroll();
+  menuProductPanel.classList.remove("active")
 });
+
+// /------------- # Fix 100vh viewport bug on mobile devices --------------/
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 // add to cart animation
 
@@ -101,15 +107,8 @@ addToCartBtn.forEach((el) => {
 
 // counter for cart
 
-const counter = document.querySelectorAll(".counter");
 const minusBtn = document.querySelectorAll(".minus");
 const plusBtn = document.querySelectorAll(".plus");
-
-counter.forEach((el) => {
-  el.addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-});
 
 minusBtn.forEach((el) => {
   el.addEventListener("click", (e) => {

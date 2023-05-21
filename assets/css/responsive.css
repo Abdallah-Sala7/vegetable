@@ -126,6 +126,10 @@
     display: none;
   }
 
+  .hero-section{
+    min-height: calc((var(--vh, 1vh) * 100) - (190px - 75px));
+  }
+
   .products-section .custom-title .menu span{
     display: block;
   }
@@ -174,6 +178,10 @@
 
   .nav-padding{
     padding-top: calc(75px + 2.5rem);
+  }
+
+  .hero-section{
+    min-height: calc((var(--vh, 1vh) * 100) - (200px - 75px));
   }
 
   .products-section .product-contint {

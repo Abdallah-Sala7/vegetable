@@ -145,21 +145,39 @@
     <!-- **** mobile-menu ***** -->
     <div class="mobile-menu-wrapper">
       <div class="mobile-menu-container tabs-content-area mobile-menu">
-        <div class="menu-search">
+        <div class="menu-search-mobile">
           <form action="">
-            <div class="menu-search-form">
-              <input type="search" placeholder="ما الذي تبحث عنه؟" />
+            <div class="menu-search-mobile-form border-0">
+              <input type="search" class="border-0" placeholder="ما الذي تبحث عنه؟" />
 
-              <button class="search-btn">
-                بحث
+              <button class="menu-search-mobile-btn">
+                <img src="assets/images/icons/search_light.png" alt="search" />
               </button>
             </div>
           </form>
         </div>
 
-        <div class="mobile-menu-tabs-content tab-content">
+        <ul class="nav nav-pills mobile-menu-nav-tabs" id="pills-tab" role="tablist">
+          <li class="nav-item flex-grow-1 " role="presentation">
+            <button class="mobile-tab tab-btn w-100 active" id="pills-mobile-menu-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-mobile-menu" type="button" role="tab" aria-controls="pills-mobile-menu"
+              aria-selected="true">
+              القائمة
+            </button>
+          </li>
 
-          <div class="mobile-menu-tab-pane tab-content mobile-main-menu">
+          <li class="nav-item flex-grow-1 " role="presentation">
+            <button class="mobile-tab tab-btn w-100" id="pills-category-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-category" type="button" role="tab" aria-controls="pills-category"
+              aria-selected="true">
+              الاقسام
+            </button>
+          </li>
+        </ul>
+
+        <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
+          <div class="tab-pane mobile-menu-tab-pane tab-content mobile-main-menu fade active show"
+            id="pills-mobile-menu" role="tabpanel" aria-labelledby="pills-mobile-menu-tab">
             <ul class="mobile-menu">
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link" href="index.html">الرئيسية</a>
@@ -171,11 +189,43 @@
               </li>
 
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#">اتصل بنا</a>
+                <a class="mobile-menu-link" href="about.html">من نحن </a>
               </li>
 
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#">من نحن </a>
+                <a class="mobile-menu-link" href="#" data-target='menu-panel' data-bs-toggle="modal"
+                data-bs-target="#signModal">اسم المستخدم</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="#" data-target='cart-panel'>السلة</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane mobile-menu-tab-pane tab-content mobile-main-menu fade" id="pills-category"
+            role="tabpane2" aria-labelledby="pills-category-tab">
+            <ul class="mobile-menu">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/lettuce.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/peanut.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="products.html">
+                  <img src="assets/images/icons/spray.png" alt="harvest" />
+
+                  عنوان القسم عنوان القسم
+                </a>
               </li>
             </ul>
           </div>
@@ -1239,7 +1289,7 @@
                 <div class="row gx-5 gap-5 gap-lg-0">
                   <div class="col-lg-7 px-0 px-lg-4 d-lg-flex align-items-lg-center">
                     <div class="contact-form-area w-100">
-                      <h1 class="contact-info-title d-block d-lg-none">
+                      <h1 class="contact-info-title text-center d-block d-lg-none">
                         يسعدنا تواصلك معانا
                       </h1>
                       <form class="contact-form">
@@ -1848,16 +1898,32 @@
 
   <!-- **** product-menu ***** -->
   <div class="mobile-menu-wrapper">
-    <div class="mobile-menu-container tabs-content-area menu-product">
+    <div class="mobile-menu-container tabs-content-area menu-product position-relative pt-5">
+      <div class="custom-title mb-5">
+        <h1 class="section-title">العنوان</h1>
+      </div>
+
+      <div class="menu-search">
+        <form action="">
+          <div class="menu-search-form border-bottom-0 px-3 pb-3 pt-0">
+            <input type="search" placeholder="ما الذي تبحث عنه؟" />
+
+            <button class="search-btn">
+              بحث
+            </button>
+          </div>
+        </form>
+      </div>
+
       <ul class="nav nav-pills mobile-nav-tabs" id="pills-tab" role="tablist">
-        <li class="nav-item w-50" role="presentation">
+        <li class="nav-item flex-grow-1 " role="presentation">
           <button class="mobile-tab tab-btn w-100 active" id="pills-menu-tab" data-bs-toggle="pill"
             data-bs-target="#pills-menu" type="button" role="tab" aria-controls="pills-menu" aria-selected="true">
             المنتجات
           </button>
         </li>
 
-        <li class="nav-item w-50" role="presentation">
+        <li class="nav-item flex-grow-1 " role="presentation">
           <button class="mobile-tab tab-btn w-100" id="pills-home-tab" data-bs-toggle="pill"
             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
             القسم
@@ -1866,8 +1932,8 @@
       </ul>
 
       <div class="mobile-menu-tabs-content tab-content" id="pills-tabContent">
-        <div class="tab-pane fade active show mobile-menu-tab-pane tab-content mobile-main-menu"
-          id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+        <div class="tab-pane fade active show mobile-menu-tab-pane tab-content mobile-main-menu" id="pills-menu"
+          role="tabpanel" aria-labelledby="pills-menu-tab">
           <ul class="mobile-menu">
             <li class="mobile-menu-item">
               <a class="mobile-menu-link" href="products.html">
@@ -1969,7 +2035,6 @@
   <div class="scroll-top-btn">
     <img src="assets/images/icons/arrow_up.png" alt="up arrow" />
   </div>
-
 
   <div class="overlay side-overlay panel-responsive-btn panel-responsive-close" role="banner" data-target="for-all">
   </div>

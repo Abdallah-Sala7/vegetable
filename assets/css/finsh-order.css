@@ -151,6 +151,10 @@
   padding-left: 1rem;
 }
 
+
+.product-card .card-body .add-btn.active:hover .check-icon {
+  filter: invert(1);
+}
 .finish-order-area .cart-items-area .cart-item .product-actions .count-wrap {
 
   max-width: 130px;
@@ -482,5 +486,12 @@
 @media (min-width: 576px){
   .cart-action-btn {
     width: fit-content;
+  }
+}
+
+
+@media (min-width: 1920px){
+  .finish-order-area .cart-items-area{
+    grid-template-columns:repeat(2,1fr);
   }
 }
